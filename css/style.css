@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+body{
+    box-sizing: content-box;
+    background-color: #0B0818;
+}
+
+
+header .navBarLogo {
+    width: 100%;
+    padding: 25px;
+    background-color: #0B0818;
+    position: fixed;
+    z-index: 400; 
+}
+  header, main {
+     overflow-x: hidden;
+ } 
+
+header .navBarLogo .navbar ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 15px;
+    text-align: right;            
+}
+
+ul li a:after {
+    content: '';    
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #EA4E1B;
+    transition: width .4s ease;
+  }
+  
+  ul li a:hover{
+    font-weight: bolder;
+  }
+
+  ul li a:hover:after {    
+    width: 100%;
+    left: 0;
+    background: #EA4E1B;
+  } 
+
+header .subHeader {
+    min-height: 110vh;
+    width: 100vw;
+    color: white;    
+    font-family: 'Raleway', sans-serif;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.subHeader h1 {   
+    font-size: 1rem;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.subHeader h2 {
+    font-size: 4rem;
+    line-height: 62px;
+    margin-bottom: 20px;
+
+}
+
+.subHeader h3 {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.section1 {    
+    position: relative;
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;   
+     
+}
+
+.section1 .subSection1 {
+    position: absolute; 
+    left: 5%;
+}
+
+.subSection1 .imgsubSection1 {
+    position: absolute;
+    grid-column: 1/2;
+    left: 30%;
+    bottom: -30%;
+}
+
+.section1 .subSection2 {
+    position: absolute;    
+    grid-column: 2/3;
+    background-color: #0B0818;
+    border-radius: 4px;
+    padding: 30px 40px;       
+}
+
+
+.section1 .subSection2 h2 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #FADA24;
+}
+
+.section1 .subSection2 h3 {
+    font-size: 1.8rem;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.section1 .subSection2 p {
+    font-size: 1em;
+    line-height: 30px;
+    color: #F2F2F2;
+}
+
+@media (max-width: 990px) {
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .section1 .subSection1 {
+        display: none;
+    }
+}
+
+.section2 {
+    min-height: 100vh;    
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.section2 .secTitle {
+    font-size: 1rem;
+    line-height: 30px;
+    color: #FADA24;
+    margin-left: 20vw;
+}
+
+.section2 .secSubtitle {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 56px;
+    margin-left: 20vw;
+    margin-bottom: 200px;
+}
+
+.section2 .sectionCards {    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-content: center;   
+    justify-content: center;
+}
+
+.section2 .sectionCards .card {   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    position: relative; 
+    width: 300px;
+    height: 430px;
+    border-radius: 20px;
+    background-color: #2C2740;
+    padding: 60px 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+@media (max-width: 1300px){
+    .section2 .sectionCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        row-gap: 100px;
+    }
+}
+
+@media (max-width: 650px){
+    .section2 .sectionCards{
+        display: grid;
+        grid-template-columns: 1fr;  
+        row-gap: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+    top: -10%;     
+    left: Calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    background-color: #0B0818;  
+    border-radius: 20px;  
+}
+
+.cardImg1 {
+    
+    box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);    
+}
+
+.cardImg1 i {
+    color: #F29200;
+    font-size: 1rem;
+}
+
+.cardImg1:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+}
+
+.cardImg2 {    
+    box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg2 i {
+    color: #75B5F1;
+    font-size: 1rem;
+}
+
+.cardImg2:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg3 {      
+    box-shadow: 5px 5px 20px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg3 i {
+    color: #D87BDA;  
+    font-size: 1.5rem;
+}
+
+.cardImg3:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg4 {
+    box-shadow: 5px 5px 20px rgba(235, 87, 96, 0.15);
+}
+
+.cardImg4 i {
+    font-size: 1.5rem;
+    color: #EB5760;
+}
+
+.cardImg4:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);
+}
+
+.cardTitle h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 35px;
+}
+
+.cardBody p {
+    font-size: 1rem;
+    line-height: 140.4%;
+}
+
+.section3 {
+    min-height: 100vh;
+    margin-top: 100px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#img_vp {    
+    height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+#img_vp img {
+    width: 100%;
+}
+
+.carousel-item h2 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.carousel-item p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.carousel-item button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: #FB5B22;
+    background-color: #FB5B22;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+} 
+
+.carousel-item button:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    top: 110%;
+    left: 75%;
+}
+
+.carousel-control-next {
+    position: absolute;    
+    top: 110%;
+}
+
+
+/* SERVICIOS */
+
+.subHeader__servicios {
+    min-height: 110vh;
+    width: 100vw;
+    color: white;    
+    font-family: 'Raleway', sans-serif;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.subHeader__servicios h1 {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.285em;
+    position: relative;
+    left: -25px;
+    margin-bottom: 25px;
+}
+
+.subHeader__servicios h2 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 129.9%;
+}
+
+.section1__servicios {    
+    position: relative;
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;   
+     
+}
+
+.section1__servicios .subSection1__servicios {
+    position: relative;
+    left: 25%;
+    z-index: 20;
+}
+
+.section1__servicios .subSection2__servicios {    
+    font-size: 18px;
+    line-height: 172.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+.section1__servicios .subSection2__servicios p {
+    padding: 36px;
+    border-radius: 5px;
+    background-color: #0B0818;
+}
+
+.section2__servicios {   
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;   
+     
+}
+
+.section2__servicios .subSection4__servicios {    
+    z-index: 20;
+}
+
+.section2__servicios .subSection3__servicios {    
+    font-size: 18px;
+    line-height: 172.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+.section2__servicios .subSection3__servicios i {
+    text-align: right;
+    color: green;
+}
+.section2__servicios .subSection3__servicios p {
+    position: relative;    
+    left: 10%;
+    padding: 36px;
+    border-radius: 5px;
+    background-color: #0B0818;
+}

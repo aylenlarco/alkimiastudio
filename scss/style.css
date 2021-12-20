@@ -1,0 +1,615 @@
+@charset "UTF-8";
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
+/* A) HOME */
+/* 1) Section "Parece magia.." */
+.gridGalleryPareceMagia {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 30rem;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.parallaxAlkimia {
+  background-image: url("../multimedia/home/imagenPolvosAzules.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textoAlkimia {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(48px, 2.5vw, 40px);
+  width: 98%;
+  color: white;
+  padding: 30vh 0;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* 2) Section "Método de trabajo" */
+.gridGalleryMetodoTrabajo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.fondoMetodoTrabajo {
+  background-color: #fffdf8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.metodoTrabajoFont {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(48px, 2.5vw, 40px);
+  color: #0B0818;
+  width: 370px;
+  margin-top: 100px;
+  margin-left: 4rem;
+  position: absolute;
+}
+
+.cajaMetodoTrabajo {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fffdf8), color-stop(#fffdf8), color-stop(#fffdf8), color-stop(#fffdf8), color-stop(#fffdf8), color-stop(#fef9ed), color-stop(#fdf5e1), color-stop(#fcf1d6), to(#fae8bd));
+  background-image: linear-gradient(to right bottom, #fffdf8, #fffdf8, #fffdf8, #fffdf8, #fffdf8, #fef9ed, #fdf5e1, #fcf1d6, #fae8bd);
+  border-radius: 100%;
+  min-width: 600px;
+  min-height: 600px;
+  margin-left: -180px;
+}
+
+.conoceMasSobreNosotrosFont {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #0B0818;
+  font-weight: 500;
+}
+
+.hoverConoceMas {
+  position: relative;
+  cursor: pointer;
+}
+
+.hoverConoceMas:after {
+  bottom: 8px;
+  content: "";
+  height: 3px;
+  position: absolute;
+  background: #ff7000;
+  -webkit-transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.hoverConoceMas:hover {
+  -webkit-transform: translateX(0.5em);
+          transform: translateX(0.5em);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.hoverConoceMas:hover:after {
+  width: 100%;
+}
+
+.titulosMetodoTrabajo {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(26px, 2.5vw, 23px);
+  color: #0B0818;
+}
+
+.parrafosMetodoTrabajo {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #0B0818;
+}
+
+.bordesTitulosMetodoTrabajo {
+  border-bottom: 1px solid #F1CD72;
+}
+
+.iconsMetodoTrabajo {
+  background-color: #0B0818;
+  padding: 24px;
+  border-radius: 20px;
+  color: white;
+}
+
+/* 3) Section "Nuestros proyectos" */
+.gridGalleryNuestrosProyectos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.fondoNuestrosProyectos {
+  background-color: #0B0818;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.divFontNuestrosProyectos {
+  margin-left: 16%;
+}
+
+#fontNuestroTrabajo {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #FADA24;
+}
+
+#fontNuestrosProyectos {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(48px, 2.5vw, 40px);
+  color: #F2F2F2;
+  font-weight: 700;
+}
+
+#borderNuestrosProyectos {
+  width: 100px;
+  border-bottom: 1px solid #F2F2F2;
+  margin-left: 0.5rem;
+}
+
+.proyectoBranding {
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/alejandrinaGourmet.png");
+  width: 406px;
+  height: 345px;
+  margin-top: 8rem;
+}
+
+.proyectoAudiovisual {
+  width: 406px;
+  height: 345px;
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/allendeProdu.png");
+}
+
+.nombreDelProyectoFont {
+  font-family: 'Raleway', sans-serif;
+  color: #FFFDF8;
+  font-size: 22px;
+  font-weight: 600px;
+}
+
+.produccionAudiovisualFont {
+  color: #75B5F1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  border: solid #75B5F1 1px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 220px;
+}
+
+.brandingFont {
+  color: #F29200;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  border: solid #F29200 1px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 220px;
+  margin-bottom: 5rem;
+}
+
+/* 4) Footer */
+.footerBlanco {
+  background-color: #FFFDF8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  width: 98%;
+  height: 759px;
+  border-radius: 0px 20px 0px 0px;
+  margin-bottom: -6px;
+}
+
+.footerNaranja {
+  background-color: #ff7000;
+  position: absolute;
+  margin-top: 6.2rem;
+  width: 2%;
+  height: 659px;
+}
+
+.redesSociales {
+  color: #0B0818;
+  margin-top: 11%;
+  margin-left: 10%;
+  width: 30%;
+}
+
+.textoFooter {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(47px, 1vw, 20px);
+  color: #0B0818;
+  margin-top: 10%;
+  width: 64%;
+  margin-left: 15%;
+}
+
+.bordeFooter {
+  border-bottom: solid #2C2740 1px;
+  min-width: 145%;
+  margin-top: 10%;
+}
+
+.divFooter {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin-top: 15%;
+}
+
+.bordeFooter2 {
+  border-right: solid #2C2740 1px;
+  height: 7rem;
+}
+
+.textoFooter2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(16px, 1vw, 18px);
+  color: #0B0818;
+}
+
+.footerGestion {
+  background-color: #0B0818;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  width: 98%;
+  height: 759px;
+  border-radius: 0px 20px 0px 0px;
+  margin-bottom: -6px;
+}
+
+.textoFooterGestion {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(47px, 1vw, 20px);
+  color: #FFFDF8;
+  margin-top: 10%;
+  width: 64%;
+  margin-left: 15%;
+}
+
+.textoFooterGestion2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(16px, 1vw, 18px);
+  color: #FFFDF8;
+}
+
+.linkDeco {
+  text-decoration: none;
+  color: #0B0818;
+}
+
+/* B) Portfolio */
+/* 1) Nuestros proyectos | Portfolio */
+.fondoPortfolio {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1f0637), color-stop(#1a0834), color-stop(#150830), color-stop(#12082c), color-stop(#0f0827), color-stop(#0e0824), color-stop(#0c0722), color-stop(#0b071f), color-stop(#0b071d), color-stop(#0b081c), color-stop(#0a081a), to(#0a0818));
+  background-image: linear-gradient(to right bottom, #1f0637, #1a0834, #150830, #12082c, #0f0827, #0e0824, #0c0722, #0b071f, #0b071d, #0b081c, #0a081a, #0a0818);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.divFontNuestrosProyectosPortfolio {
+  margin-left: 6%;
+}
+
+.arrowPortfolio {
+  background: url("../multimedia/portfolio/ArrowDown.png");
+  width: 131px;
+  height: 281px;
+  margin-left: 3%;
+}
+
+.allendePortfolio {
+  width: 406px;
+  height: 345px;
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/allendeProdu.png");
+}
+
+.alejandrinaPortfolio {
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/alejandrinaGourmet.png");
+  width: 406px;
+  height: 345px;
+  margin-top: 8rem;
+}
+
+.plantillasPortfolio {
+  width: 406px;
+  height: 345px;
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/plantillasRedes.png");
+}
+
+.flyersPortfolio {
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/flyersPublicitarios.png");
+  width: 406px;
+  height: 345px;
+  margin-top: 8rem;
+}
+
+#fontSubtituloProyectosPortfolio {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #F2F2F2;
+  width: 70%;
+}
+
+.bannerPortfolio {
+  background: -webkit-gradient(linear, right top, left top, color-stop(4.37%, #0A0818), color-stop(60.85%, rgba(10, 8, 24, 0))), url("../multimedia/portfolio/portfolioBanner.png");
+  background: linear-gradient(to left, #0A0818 4.37%, rgba(10, 8, 24, 0) 60.85%), url("../multimedia/portfolio/portfolioBanner.png");
+  width: 612px;
+  height: 217px;
+}
+
+/* 2) Cards Portfolio */
+.sectionCardsPortfolio {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 100px;
+  -ms-grid-columns: (minmax(21rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20%;
+  margin-top: 10%;
+}
+
+.cardPortfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  background-color: #2C2740;
+  position: relative;
+  width: 240px;
+  height: 390px;
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.cardImgPortfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 39%;
+  position: absolute;
+  top: -10%;
+  width: 80px;
+  height: 80px;
+  background-color: #0B0818;
+  border-radius: 20px;
+}
+
+.cardImg1Portfolio {
+  -webkit-box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);
+          box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);
+}
+
+.cardImg1Portfolio i {
+  color: #F29200;
+  font-size: 1rem;
+}
+
+.cardImg1Portfolio:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+          box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+}
+
+.cardImg2Portfolio {
+  -webkit-box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
+          box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg2Portfolio i {
+  color: #75B5F1;
+  font-size: 1rem;
+}
+
+.cardImg2Portfolio:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
+          box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg3Portfolio {
+  -webkit-box-shadow: 5px 5px 20px rgba(216, 123, 218, 0.15);
+          box-shadow: 5px 5px 20px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg3Portfolio i {
+  color: #D87BDA;
+  font-size: 1.5rem;
+}
+
+.cardImg3Portfolio:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 42px rgba(216, 123, 218, 0.15);
+          box-shadow: 5px 5px 42px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg4Portfolio {
+  -webkit-box-shadow: 5px 5px 20px rgba(235, 87, 96, 0.15);
+          box-shadow: 5px 5px 20px rgba(235, 87, 96, 0.15);
+}
+
+.cardImg4Portfolio i {
+  font-size: 1.5rem;
+  color: #EB5760;
+}
+
+.cardImg4Portfolio:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);
+          box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);
+}
+
+.cardTitlePortfolio h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 35px;
+  color: #F2F2F2;
+}
+
+.cardBodyPortfolio {
+  width: 97%;
+}
+
+.cardBodyPortfolio p {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 12px);
+}
+
+.cardFooterPortfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* C) Allende Pastelería | Portfolio | Producción Audiovisual */
+/* 1) Introducción Allende Panadería */
+.rutaProyectos {
+  color: #F2F2F2;
+}
+
+.parrafoAllende {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #F2F2F2;
+  width: 51%;
+  margin-top: 4%;
+}
+
+.borderParrafoAllende {
+  border-bottom: yellow solid 3px;
+  width: 5%;
+}
+
+/* 2) Galería de Imágenes Allende | Portfolio | Producción Audiovisual */
+.gridGalleryImagenesAllende {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30%))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(30%));
+  margin-left: 6%;
+  margin-top: 5%;
+  margin-bottom: 18%;
+}
+
+.imagenesAllende {
+  margin-top: 20px;
+}
+
+.textoNuestrosProyectos {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(48px, 2.5vw, 40px);
+  color: #F2F2F2;
+}
+
+#borderNuestrosProyectos2 {
+  width: 100px;
+  border-bottom: 4px solid #F29200;
+  margin-left: 0.5rem;
+}
+
+/* 3) Más de nuestros proyectos */
+.plantillasPortfolio2 {
+  width: 406px;
+  height: 345px;
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/plantillasRedes.png");
+  margin-top: 8rem;
+}
+
+.allendePortfolio2 {
+  width: 406px;
+  height: 345px;
+  background: linear-gradient(322.38deg, #0B0818 -0.06%, rgba(11, 8, 24, 0) 80.24%), url("../multimedia/portfolio/allendeProdu.png");
+  margin-top: 8rem;
+}
+
+@media (max-width: 1575px) {
+  /* Portfolio */
+  .bannerPortfolio {
+    display: none;
+  }
+  .arrowPortfolio {
+    display: none;
+  }
+  .tuboEnsayoPortfolio {
+    display: none;
+  }
+  .sectionCardsPortfolio {
+    margin-top: 20%;
+  }
+  /* Footer */
+  .bordeFooter {
+    min-width: 120%;
+  }
+  /* Allende */
+  .parrafoAllende {
+    width: 86%;
+  }
+  .imagenAllende2 {
+    width: 570px;
+  }
+  .imagenAlejandrina2 {
+    width: 94%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
