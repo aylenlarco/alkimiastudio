@@ -382,14 +382,12 @@ header .subHeader {
 .section1__servicios {    
     position: relative;
     min-height: 100vh;  
-    background-color: #0B0818;
+    background-color: #FFFDF8;
     width: 100%;  
     display: grid;    
     grid-template-columns: repeat(2, 1fr); 
-    color: white;
-    background-color: #0B0818;
-    font-family: 'Raleway', sans-serif;   
-     
+    color: #0B0818;
+    font-family: 'Raleway', sans-serif;
 }
 
 .section1__servicios .subSection1__servicios {
@@ -407,9 +405,53 @@ header .subHeader {
     z-index: 30;
 }
 .section1__servicios .subSection2__servicios p {
-    padding: 36px;
+    padding: 40px;
+    width: 95%;
+    line-height: 40px;
+    font-size: 36px;
     border-radius: 5px;
-    background-color: #0B0818;
+    background-color: #FFFDF8;
+}
+
+.subSection2__sobreNosotros {
+    font-size: 18px;
+    padding: 14%;
+    width: 120%;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #FFFDF8;
+    margin-top: -30%;
+    margin-left: -30%;
+}
+
+.subSection2__sobreNosotros2 {
+    font-size: 18px;
+    padding: 14%;
+    width: 120%;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-top: -10%;
+    margin-left: -30%;
+}
+
+.textoTeam {
+    color: #2C2740;
+    font-size: 48px;
+    margin-left: 10%;
+}
+
+.textoTeam2 {
+    margin-left: 10%;
+    width: 80%;
+    color: #EB5760;
+    font-size: 22px;
+}
+
+.textoTeam3 {
+    margin-left: 10%;
+    font-size: 18px;
 }
 
 .section2__servicios {   

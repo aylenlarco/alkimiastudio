@@ -305,6 +305,11 @@
   color: #0B0818;
 }
 
+.linkDeco2 {
+  text-decoration: none;
+  color: #FFFDF8;
+}
+
 /* B) Portfolio */
 /* 1) Nuestros proyectos | Portfolio */
 .fondoPortfolio {
@@ -611,5 +616,55 @@
   .imagenAlejandrina2 {
     width: 94%;
   }
+}
+
+/* Sobre nosotros */
+#fontSobreNosotros {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 2.5vw, 15px);
+  color: #F2F2F2;
+}
+
+.resilientesBorde {
+  width: 100px;
+  border-bottom: 3px solid #00FFBB;
+  margin-left: 0.5rem;
+}
+
+.fondoSobreNosotros {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#0c091b), color-stop(#0c091b), color-stop(#0c091b), color-stop(#0c091b), color-stop(#0c091b), color-stop(#150f21), color-stop(#1c1326), color-stop(#25162b), color-stop(#3a1b34), color-stop(#512038), color-stop(#672637), to(#7a2f33));
+  background-image: linear-gradient(to left top, #0c091b, #0c091b, #0c091b, #0c091b, #0c091b, #150f21, #1c1326, #25162b, #3a1b34, #512038, #672637, #7a2f33);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.rectanguloBlanco {
+  color: #F2F2F2;
+  width: 70%;
+  height: 50%;
+}
+
+.imagenesTeam {
+  width: 50%;
+  position: relative;
+  margin-top: -20%;
+  margin-left: 5%;
+}
+
+.imagenesTeam2 {
+  width: 50%;
+  margin-left: 5%;
+}
+
+#borderMision {
+  width: 100px;
+  border-bottom: 5px solid #F29200;
+  margin-left: 0.5rem;
+}
+
+#fontCulture {
+  color: #0a0818;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
