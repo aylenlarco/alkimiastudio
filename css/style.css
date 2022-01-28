@@ -136,6 +136,14 @@ header .subHeader {
     color: #F2F2F2;
 }
 
+.fondoMainServicios {
+    background-color: white;
+}
+
+.imagenesSubsection {
+    width: 92%;
+}
+
 @media (max-width: 990px) {
     .section1{
         display: flex;
@@ -390,6 +398,13 @@ header .subHeader {
     font-family: 'Raleway', sans-serif;
 }
 
+.section1__servicios2 {
+    background-color: #FFFDF8;
+    min-height: 100vh;  
+    width: 100%;  
+    position: relative;
+}
+
 .section1__servicios .subSection1__servicios {
     position: relative;
     left: 25%;
@@ -404,6 +419,7 @@ header .subHeader {
     align-items: center;
     z-index: 30;
 }
+
 .section1__servicios .subSection2__servicios p {
     padding: 40px;
     width: 95%;
@@ -478,6 +494,7 @@ header .subHeader {
     align-items: center;
     z-index: 30;
 }
+
 .section2__servicios .subSection3__servicios i {
     text-align: right;
     color: green;
@@ -486,6 +503,433 @@ header .subHeader {
     position: relative;    
     left: 10%;
     padding: 36px;
-    border-radius: 5px;
+    border-radius: 5px;   
     background-color: #0B0818;
 }
+
+/* CSS AYLU */
+
+.gridGalleryNuestrosProyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+}
+
+.fondoSobreNosotros {
+    background-image: linear-gradient(to left top, #0c091b, #0c091b, #0c091b, #0c091b, #0c091b, #150f21, #1c1326, #25162b, #3a1b34, #512038, #672637, #7a2f33);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;        
+}
+
+.divFontNuestrosProyectos {
+    margin-left: 16%;
+}
+
+#fontSobreNosotros {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(18px, 2.5vw, 15px);
+    color: #F2F2F2;
+}
+
+#fontNuestrosProyectos {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(48px, 2.5vw, 40px);
+    color: #F2F2F2;
+    font-weight: 700;
+}
+
+.parrafoAllende {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(18px, 2.5vw, 15px);
+    color: #F2F2F2;
+    width: 51%;
+    margin-top: 4%;
+}
+
+.tuboEnsayoPortfolio {
+    display: none;
+}
+
+.sectionCardsPortfolio {   
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    align-content: center;   
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.imagenesTeam {
+    width: 50%;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 5%;
+
+}
+
+.imagenesTeam2 {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.gridGalleryMetodoTrabajo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+}
+
+.fondoMetodoTrabajo {
+    background-color: #fffdf8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;   
+}
+
+.metodoTrabajoFont {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(48px, 2.5vw, 40px);
+    color: #0B0818;
+    width: max(250px,300px, 370px);
+    margin-top: 100px;
+    margin-left: 4rem;
+}
+
+#fontCulture {
+    color: #0a0818;
+    font-size: 18px;
+}
+
+#borderMision {
+    width: 100px;
+    border-bottom: 5px solid #F29200;
+    margin-left: 0.5rem;
+}
+
+.cajaMetodoTrabajo {
+    background-image: linear-gradient(to right bottom, #fffdf8, #fffdf8, #fffdf8, #fffdf8, #fffdf8, #fef9ed, #fdf5e1, #fcf1d6, #fae8bd);
+    border-radius: 100%;
+    min-width: 600px;
+    min-height: 600px;
+    margin-left: -180px;
+}
+
+.bordesTitulosMetodoTrabajo {
+    border-bottom: 1px solid #F1CD72;
+}
+
+.parrafosMetodoTrabajo {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(18px, 2.5vw, 15px);
+    color: #0B0818;
+}
+
+.titulosMetodoTrabajo {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(26px, 2.5vw, 23px);
+    color: #0B0818;
+}
+
+.iconsMetodoTrabajo {
+    background-color: #0B0818;
+    padding: 24px;
+    border-radius: 20px;
+    color: white;
+}
+
+.fondoNuestrosProyectos {
+    background-color: #0B0818;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.footerGestion {
+    background-color: #0B0818;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    width: 98%;
+    height: 759px;
+    border-radius: 0px 20px 0px 0px;
+    margin-bottom: -6px;
+}
+
+.textoFooterGestion {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(47px, 1vw , 20px);
+    color: #FFFDF8;
+    margin-top: 10%;
+    width: 64%;
+    margin-left: 15%;
+}
+
+.bordeFooter {
+    min-width: 120%;
+}
+
+.bordeFooter {
+    border-bottom: solid #2C2740 1px;
+    min-width: 145%;
+    margin-top: 10%;
+}
+
+.textoFooterGestion2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(16px, 1vw , 18px);
+    color: #FFFDF8;
+}
+
+.divFooter {
+    display: grid;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.linkDeco2 {
+    text-decoration: none;
+    color: #FFFDF8;; 
+}
+
+.redesSociales {
+    color: #0B0818;
+    margin-top: 11%;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.textoServicios {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(48px, 2.5vw, 40px);
+    color: #F2F2F2;
+}
+
+.sectionCardsPortfolio {   
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    align-content: center;   
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.cardPortfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #2C2740;
+    position: relative;
+    width: 240px;
+    height: 390px;
+    border-radius: 20px;
+    padding: 60px 30px;
+    text-align: center;
+    justify-self: center;
+    box-sizing: content-box;
+}
+
+.cardImgPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 39%;
+    position: absolute;    
+    top: -10%;     
+    width: 80px;
+    height: 80px;
+    background-color: #0B0818;  
+    border-radius: 20px;  
+}
+
+.cardImg1Portfolio {
+    box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);    
+}
+
+.cardImg1Portfolio i {
+    color: #F29200;
+    font-size: 1rem;
+}
+
+.cardImg1Portfolio:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+}
+
+.cardImg2Portfolio {    
+    box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg2Portfolio i {
+    color: #75B5F1;
+    font-size: 1rem;
+}
+
+.cardImg2Portfolio:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg3Portfolio {      
+    box-shadow: 5px 5px 20px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg3Portfolio i {
+    color: #D87BDA;  
+    font-size: 1.5rem;
+}
+
+.cardImg3Portfolio:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg4Portfolio {
+    box-shadow: 5px 5px 20px rgba(235, 87, 96, 0.15);
+}
+
+.cardImg4Portfolio i {
+    font-size: 1.5rem;
+    color: #EB5760;
+}
+
+.cardImg4Portfolio:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);
+}
+
+.cardTitlePortfolio h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 35px;
+    color: #F2F2F2;
+}
+
+.cardBodyPortfolio {
+    width: 97%;
+}
+
+.cardBodyPortfolio p {
+    color: #F2F2F2;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(18px, 2.5vw, 12px);
+}
+
+.cardFooterPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#fontNuestroTrabajo {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(18px, 2.5vw, 15px);
+    color: #FADA24;
+}
+
+.footerBlanco {
+    background-color: #FFFDF8;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    width: 98%;
+    height: 759px;
+    border-radius: 0px 20px 0px 0px;
+    margin-bottom: -6px;
+}
+
+
+.redesSociales {
+    color: #0B0818;
+    margin-top: 11%;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.textoFooter {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(47px, 1vw , 20px);
+    color: #0B0818;
+    margin-top: 10%;
+    width: 64%;
+    margin-left: 15%;
+}
+
+.bordeFooter {
+    border-bottom: solid #2C2740 1px;
+    min-width: 145%;
+    margin-top: 10%;
+}
+
+.divFooter {
+    display: grid;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.bordeFooter2 {
+    border-right: solid #2C2740 1px;
+    height: 7rem;
+}
+
+.textoFooter2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(16px, 1vw , 18px);
+    color: #0B0818; 
+}
+
+.linkDeco {
+    text-decoration: none;
+    color: #0B0818; 
+}
+
+.linkDeco2 {
+    text-decoration: none;
+    color: #FFFDF8;; 
+}
+
+
+@media (max-width: 1575px) {
+
+    /* Portfolio */
+    .bannerPortfolio {
+        display: none;
+    }
+
+    .arrowPortfolio {
+        display: none;
+    }
+
+    .tuboEnsayoPortfolio {
+        display: none;
+    }
+
+    .sectionCardsPortfolio {
+        margin-top: 20%;
+    }
+
+    /* Footer */
+    .bordeFooter {
+        min-width: 120%;
+    }
+
+    /* Allende */
+    .parrafoAllende {
+        width: 86%;
+    }
+
+    .imagenAllende2 {
+        width: 570px;
+     }
+
+     .imagenAlejandrina2 {
+         width: 94%;
+     }
+
+     .cajaMetodoTrabajo {
+        display: none;
+    }
+    
+}
+

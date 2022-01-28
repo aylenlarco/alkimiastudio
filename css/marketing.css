@@ -59,7 +59,6 @@ ul li a:after {
 
 .subHeader__diseño {
     min-height: 110vh;
-    width: 100vw;
     color: white;    
     font-family: 'Raleway', sans-serif;     
     display: flex;
@@ -83,12 +82,20 @@ ul li a:after {
 }
 
 .h1__content {
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     padding: 50px;
     border-radius: 15px;
     background-color: #0b081883;
+    font-size: clamp(48px, 2.5vw, 40px);
     
+}
+
+.textoMarketing {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(48px, 2.5vw, 40px);
+    color: #F2F2F2;
+    font-weight: 700;
 }
 
 .subHeader__diseño .mainTitle__diseño h1 {

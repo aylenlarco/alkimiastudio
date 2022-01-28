@@ -215,6 +215,15 @@
     } 
    
 
+    .fontParrafoQuienesSomos2 {
+        font-size: 1em;
+        line-height: 30px;
+        color: #0B0818;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    
+
 /* CAROUSEL */
 
     .carousel-item h2 {
